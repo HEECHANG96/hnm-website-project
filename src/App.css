@@ -2,17 +2,19 @@
     display:flex;
     justify-content: flex-end;
     margin:20px;
+    cursor:pointer;
 }
 
 .nav-section {
     display:flex;
     justify-content: center;
+    cursor:pointer;
 }
 
 .menu-list {
     display: flex;
     list-style-type: none;
-    margin-left: 600px;
+    margin-left:600px;
 }
 
 .menu-list li {
@@ -28,4 +30,12 @@
     transform: scale(1.1);
 }
 
+.product-img {
+    display:flex;
+    justify-content: flex-end;
+}
 
+.size-button {
+    margin-top:20px;
+    margin-bottom:20px;
+}
