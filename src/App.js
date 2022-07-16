@@ -28,19 +28,14 @@ function App() {
 
   // false : 로그인 X
   // true : 로그인 O
-  const [authenticate, setAuthenticate] = useState(false);
-  useEffect(() => {
-    console.log("Aaaa", authenticate);
-  },[authenticate]);
-
 
   return (
     <div>
       <Navbar/>
       <Routes>
         <Route path="/" element={<ProductAll/>}/>
-        <Route path="/login" element={<Login setAuthenticate={setAuthenticate}/>}/>
-        <Route path="/product/:id" element={<PrivateRoute authenticate={authenticate}/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/product/:id" element={<PrivateRoute/>}/>
       </Routes>
     </div>
   );
